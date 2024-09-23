@@ -1,0 +1,109 @@
+/* Customer.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+   
+  .customer-container,
+  .login-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+   
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+   
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+   
+  .form-group {
+    margin-bottom: 15px;
+  }
+   
+  label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+   
+  input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+   
+  input:focus {
+    border-color: #007BFF;
+    outline: none;
+  }
+   
+  button {
+    padding: 10px;
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+   
+  button:hover {
+    background-color: #0056b3;
+  }
+   
+  .success {
+    color: #28a745;
+    margin: 10px 0;
+    text-align: center;
+  }
+   
+  .error {
+    color: #dc3545;
+    margin: 10px 0;
+    text-align: center;
+  }
+   
+  .customer-list {
+    list-style: none;
+    padding: 0;
+  }
+   
+  .customer-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+   
+  .customer-list li:last-child {
+    border-bottom: none;
+  }
+   
+  .logout-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 0;
+  }
+   
+  .logout-btn:hover {
+    background-color: #e63939;
+  }
+   
+   
+   
+   
+   
+   
