@@ -8,11 +8,24 @@ services:
     ports:
       - "8000:8000"
     
+  # frontend:
+  #   container_name: frontend
+  #   build: ./frontend-react
+  #   volumes:
+  #     - ./frontend:/app
+  #   ports:
+  #     - "3000:3000"
+  #   depends_on:
+  #     - backend
+
+  services:
   frontend:
     container_name: frontend
-    build: ./frontend-react
+    build:
+      context: .
+      dockerfile: ./frontend-react/Dockerfile
     volumes:
-      - ./frontend:/app
+      - ./frontend-react:/app
     ports:
       - "3000:3000"
     depends_on:
