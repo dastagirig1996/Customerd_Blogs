@@ -18,7 +18,7 @@ const CustomerEdit = () => {
   useEffect(() => {
     const fetchCustomer = async () => {
       try {
-        const response = await axiosInstance.get(`http://localhost:3000//customers/customer/${id}/`, {
+        const response = await axiosInstance.get(`http://34.47.142.65:3000//customers/customer/${id}/`, {
           headers: { Authorization: `Token ${token}` },
         });
         setFirstName(response.data.first_name);
