@@ -13,7 +13,7 @@ axiosInstance.interceptors.response.use(
       originalRequest._retry = true;
       const refreshToken = localStorage.getItem('refresh_token');
       try {
-        const res = await axiosInstance.post('http://34.47.142.65:8000/customers/refresh/', { refresh: refreshToken });
+        const res = await axiosInstance.post('http://34.47.142.65:8500/customers/refresh/', { refresh: refreshToken });
         const { access_token } = res.data;
      
         localStorage.setItem('access_token', access_token);

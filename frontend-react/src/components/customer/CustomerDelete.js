@@ -14,7 +14,7 @@ const CustomerDelete = () => {
  
   const checkCustomerExists = async () => {
     try {
-      const response = await axiosInstance.get(`http://34.47.142.65:3000/customers/customer/${id}/`, {
+      const response = await axiosInstance.get(`http://34.47.142.65:8500/customers/customer/${id}/`, {
         headers: { Authorization: `Token ${token}` },
       });
       if (!response.data) {
