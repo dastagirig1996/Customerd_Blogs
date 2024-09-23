@@ -12,7 +12,7 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axiosInstance.post('http://localhost:8000/customers/login/', {
+      const response = await axiosInstance.post('http://backend:8000/customers/login/', {
         username,
         password,
       });
