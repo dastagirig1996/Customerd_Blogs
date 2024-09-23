@@ -14,7 +14,7 @@ from django.contrib.auth import authenticate
 import time 
 from jwt.exceptions import ExpiredSignatureError, InvalidTokenError
 
-Access_token_expiry_sec = 20
+Access_token_expiry_sec = 60*2
 Refresh_token_expiry_sec = 60*60*24*7
 
 private_key = "gchvbnmpltfb3opmfnic4+54sff"
