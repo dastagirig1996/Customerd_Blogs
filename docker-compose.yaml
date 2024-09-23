@@ -10,7 +10,7 @@ services:
     
   frontend:
     container_name: frontend
-    build: ./frontend
+    build: ./frontend-react
     volumes:
       - ./frontend:/app
     ports:
