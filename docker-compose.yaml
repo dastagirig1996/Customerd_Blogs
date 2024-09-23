@@ -9,10 +9,10 @@ services:
       - "8000:8000"
     
   frontend:
-    container_name: frontend-react
+    container_name: frontend
     build: ./frontend-react
     volumes:
-      - ./frontend-react:/app
+      - ./frontend:/app
     ports:
       - "3000:3000"
     depends_on:
