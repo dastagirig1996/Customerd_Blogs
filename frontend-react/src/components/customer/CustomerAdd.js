@@ -35,7 +35,7 @@ const CustomerAdd = () => {
    
     try {
       await axiosInstance.post(
-        'http://35.200.248.136:9500/customers/customer/',
+        'http:/localhost:3000/customers/customer/',
         { first_name: firstName, last_name: lastName, date_of_birth: dob, phone_number: phone },
         { headers: { Authorization: `Token ${token}` } }
       );

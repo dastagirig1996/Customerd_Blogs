@@ -12,7 +12,7 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axiosInstance.post('http://35.200.248.136:9500/customers/login/', {
+      const response = await axiosInstance.post('http://localhost:3000/customers/login/', {
         username,
         password,
       });

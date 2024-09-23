@@ -16,7 +16,7 @@ const CustomerList = () => {
     setLoading(true);
     const token = localStorage.getItem('access_token');
     try {
-      const response = await axiosInstance.get('http://35.200.248.136:9500/customers/customer/', {
+      const response = await axiosInstance.get('http://localhost:3000/customers/customer/', {
         headers: { Authorization: `Token ${token}` },
       });
       setCustomers(response.data);
