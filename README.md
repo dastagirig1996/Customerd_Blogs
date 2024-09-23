@@ -1,2 +1,2 @@
-# Customerd_Blogs
-Customerd_Blogs
+# Customer_Blogs
+Customer_Blogs
