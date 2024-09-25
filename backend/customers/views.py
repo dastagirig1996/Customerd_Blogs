@@ -14,7 +14,7 @@ from django.contrib.auth import authenticate
 import time 
 from jwt.exceptions import ExpiredSignatureError, InvalidTokenError
 
-Access_token_expiry_sec = 60*2
+Access_token_expiry_sec = 30
 Refresh_token_expiry_sec = 60*60*24*7
 
 private_key = "gchvbnmpltfb3opmfnic4+54sff"
@@ -55,7 +55,7 @@ class LoginView(APIView):
             try:
                 check_ref_token = RefreshToken.objects.get(ip_address = client_ip)
                 if check_ref_token:
-                    print("ip_exists")
+
                     check_ref_token.token = refresh_token 
                     check_ref_token.save()
 
